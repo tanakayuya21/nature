@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <link rel="icon" href="common/img/module/favicon.png" />
+    <!-- SNS OGP start -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="" />
+    <meta property="og:keywords" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="fb:app_id" content="" />
+    <!--twitter card-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@" />
+    <!-- page css files start -->
+    <link rel="stylesheet" type="text/css" href="common/scss/style.css" />
+
+    <!-- page css files end -->
+  </head>
+  <body>
+    <img class="c-logp-icon" src="common/svg/logp.svg" />
+    <a class="c-reservation-btn">
+      <img class="icon" src="common/svg/reservation-icon.svg" />
+      <p class="title">ご予約</p>
+      <p class="description">Reserve</p>
+    </a>
+    <div id="mainContents" class="l-wrapper">
+      <button class="hamburger-menu" id="js-hamburger-menu">
+        <span class="hamburger-menu__bar"></span>
+        <span class="hamburger-menu__bar"></span>
+        <span class="hamburger-menu__bar"></span>
+      </button>
+      <div class="side-menu">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activity">Activity</a></li>
+            <li><a href="#natasyou">Natasyou</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#roorule">Roo &rule</a></li>
+            <li><a href="#reserve">Reserve</a></li>
+          </ul>
+          <ul class="business">
+            <li><a href="#">プライバシーポリシー </a></li>
+            <li><a href="#">運営会社</a></li>
+          </ul>
+        </nav>
+        <a class="arrow"></a>
+      </div>
+      <section class="p-home">
+        <img class="home-img" src="common/img/home-image.png" />
+        <p class="title">自然とトモに。</p>
+        <p class="description">with nature & to be friends with nature</p>
+      </section>
+      <section class="l-about" id="about">
+        <div class="l-about-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <img class="icon" src="common/svg/kamome.svg" />
+            <div class="title-box">
+              <div class="title">
+                <span class="title-child">ゲストハウス</span>
+                <br />OKOTAへ<br />&ensp;ようこそ
+              </div>
+              <div class="title-sub">About</div>
+            </div>
+            <div class="title-bottom">
+              <img class="matu-img" src="common/svg/matu.svg" />
+              <div class="lang">
+                <p>古民家関連動画</p>
+                トゥラクエ <br />TOLAND QUEST
+              </div>
+              <a href="" class="youtube-btn">YOUTUBE へ</a>
+            </div>
+          </div>
+          <!-- page css files end -->
+          <div class="grid2">
+            <p class="description">
+              ゲストハウスOKOTAは、日本の伝統的な家屋である古民家を活用した、ユニークで心温まる宿泊体験を提供しています。
+              懐かしい雰囲気と静かな空間が特徴で、木のぬくもりに包まれながら、日本の四季折々の原風景を感じることができます。
+              <br />
+              <br />
+              また、地元の人々との交流や地域の魅力を発見する機会も提供しています。親切な地元の方々から、おもてなしの心を感じ、地域の食材を使った料理や伝統工芸品を楽しんだり、日本の奥深い文化や歴史に触れることもできます。そして、自然に囲まれた環境でゆっくりとした時間を過ごし、日常の喧騒から離れ、心身ともにリフレッシュすることができます。
+              当ゲストハウスで、心地よい休息と非日常の体験をお楽しみください。
+            </p>
+            <img class="about-img" src="common/img/bummy-image.png" />
+          </div>
+          <div class="grid3">
+            <div class="card-box">
+              <a href="" class="left-btn"></a>
+              <div class="box">
+                <div class="card">
+                  <img class="card-img" src="common/img/bummy-image.png" />
+                  <p class="card-description">
+                    サンプルテキストサンプルテキストサンプルテキストサンプル
+                  </p>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="common/img/bummy-image.png" />
+                  <p class="card-description">
+                    サンプルテキストサンプルテキストサンプルテキストサンプル
+                  </p>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="common/img/bummy-image.png" />
+                  <p class="card-description">
+                    サンプルテキストサンプルテキストサンプルテキストサンプル
+                  </p>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="common/img/bummy-image.png" />
+                  <p class="card-description">
+                    サンプルテキストサンプルテキストサンプルテキストサンプル
+                  </p>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="common/img/bummy-image.png" />
+                  <p class="card-description">
+                    サンプルテキストサンプルテキストサンプルテキストサンプル
+                  </p>
+                </div>
+              </div>
+              <a href="" class="right-btn"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-activity" id="activity">
+        <div class="l-activity-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <img class="icon" src="common/svg/flower.svg" />
+            <div class="title-box">
+              <div class="title">
+                <span class="title-child">ゆったり＆リフレッシュ</span>
+                <br />『非常識』の体験
+              </div>
+              <div class="title-sub">Activity</div>
+            </div>
+            <div class="title-bottom">
+              <img class="wave-img" src="common/svg/wave.svg" />
+              <img class="run-img" src="common/svg/run.svg" />
+            </div>
+          </div>
+          <!-- page css files end -->
+          <div class="grid2">
+            <div class="box">
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  浄めの間で瞑想体験<span>meditation</span>
+                </p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  パワースポット巡り<span>power spot</span>
+                </p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">バーベキュー<span>BBQ</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">農業体験<span>agriculture</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">節句祭<span>sekku</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">暦合宿<span>training camp</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-natasyou" id="natasyou">
+        <div class="l-natasyou-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <img class="icon" src="common/svg/moon.png" />
+            <div class="title-box">
+              <div class="title">
+                陰陽師の里<br />
+                &ensp;『名田庄』
+              </div>
+              <div class="title-sub">Nata<br /><br />syou</div>
+            </div>
+            <div class="title-bottom">
+              <img class="wave-img" src="common/svg/vortex.svg" />
+              <a href="" class="scroll-btn">scroll</a>
+              <a href="" class="skip-btn">skip</a>
+            </div>
+          </div>
+          <!-- page css files end -->
+          <div class="grid2">
+            <div class="box">
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  浄めの間で瞑想体験
+                </p>
+                <span>meditation</span>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  パワースポット巡り<span>power spot</span>
+                </p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">バーベキュー<span>BBQ</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">農業体験<span>agriculture</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">節句祭<span>sekku</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">暦合宿<span>training camp</span></p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page css files end -->
+      <section class="l-staff" id="staff">
+        <div class="l-staff-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <div class="title-box">
+              <img class="icon-top" src="common/svg/mame-top.svg" />
+              <div class="title">
+                スタッフ紹介
+              </div>
+              <div class="title-sub">Staff</div>
+            </div>
+            <div class="title-bottom">
+              <img class="icon-bottom" src="common/svg/mame-bottom.svg" />
+              <img class="icon-meeting" src="common/svg/meeting.svg" />
+            </div>
+          </div>
+          <!-- page css files end -->
+          <div class="grid2">
+            <div class="box">
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  浄めの間で瞑想体験
+                </p>
+                <p class="card-title-sub">meditation</p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  浄めの間で瞑想体験
+                </p>
+                <p class="card-title-sub">meditation</p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  浄めの間で瞑想体験
+                </p>
+                <p class="card-title-sub">meditation</p>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="common/img/bummy-image.png" />
+                <p class="card-title">
+                  浄めの間で瞑想体験
+                </p>
+                <s class="card-title-sub">meditation</s>
+                <p class="card-description">
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                  サンプルテキストサンプルテキストサンプルテキストサンプル
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-gallery" id="gallery">
+        <div class="l-gallery-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <div class="title-box">
+              <div class="title">
+                OKOTA<span class="title-child">の</span>日常
+              </div>
+              <div class="title-sub">Galle<br />ry</div>
+            </div>
+            <div class="title-bottom">
+              <img class="tubomi-img" src="common/svg/tubomi.svg" />
+              <a href="" class="instagram-btn">Instagram へ</a>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <tr>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+                <td>
+                  <div class="card">
+                    <img class="card-img" src="common/img/bummy-image.png" />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="l-roorule" id="roorule">
+        <div class="l-roorule-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <img class="icon" src="common/svg/tree.svg" />
+            <div class="title-box">
+              <div class="title">
+                お部屋<span class="title-child">と</span>詳細
+              </div>
+              <div class="title-sub">Roo<br />&rule</div>
+            </div>
+            <div class="title-bottom">
+              <img class="bamboo-img" src="common/svg/bamboo.svg" />
+            </div>
+          </div>
+          <!-- page css files end -->
+          <div class="grid2">
+            <img class="about-img" src="common/img/bummy-image.png" />
+            <div class="description">
+              <div class="description-top">
+                <p class="page">1/8</p>
+                <p class="title">間取り</p>
+                <p class="detail">
+                  サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  <br />
+                </p>
+              </div>
+              <div class="description-bottom">
+                <p class="title">rule</p>
+                <ul class="rule-list">
+                  <li>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </li>
+                  <li>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </li>
+                  <li>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </li>
+                  <li>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </li>
+                  <li>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </li>
+                  <li>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid3">
+            <div class="detail-box">
+              <div class="detail">
+                <div class="rule-title">▪︎料金</div>
+                <div class="fee-detail">素泊まり&ensp;3,000円〜/泊</div>
+                <div class="system-list">
+                  <div class="name-top">チェックイン</div>
+                  <div class="value-top">当日いつでも</div>
+                </div>
+                <div class="system-list">
+                  <div class="name-bottom">チェックアウト</div>
+                  <div class="value-bottom">〜15:00</div>
+                </div>
+                <div class="cancel">
+                  <div class="title">キャンセルについて</div>
+                  <div class="explanation">
+                    より多くのお客様にご利用いただくため、以下の内容を必ずお守り下さいますようご協力をお願いいたします。<br />
+                    <br />
+
+                    ※キャンセルされる場合は、決定された時点でキャンセルの手続きをお願いします。<br />
+                    ※当日キャンセル、またはご連絡なくお越しいただけなかった場合は、キャンセル料として基本料金全額（施設利用料金）のご請求をさせていただきます。<br />
+                    ※台風や強風等の自然災害発生・降雪などの気象条件により、施設側で閉鎖を判断する場合がございます。
+                  </div>
+                </div>
+                <div class="label-box">
+                  <div class="content">Wi-Fi</div>
+                  <div class="content">駐車場完備</div>
+                  <div class="content">お米食べ放題</div>
+                </div>
+                <div class="rule-title">▪︎アクセス</div>
+                <div class="access-explanation">
+                  〒917-0383<br />
+                  福井県, 大飯郡おおい町名田庄下<br />10号坪内４-１<br /><br />
+                  【お車の場合】<br />北陸自動車道「小浜IC」から車で約40分<br />
+                  <br />
+                  【公共交通機関利用の場合】<br />
+                  ・バス：小浜駅〜〇〇バス停より徒歩00分<br />
+                  ・バス：小浜駅〜〇〇バス停より徒歩00分<br />
+                </div>
+              </div>
+              <div class="facility-box">
+                <span>◆無料設備</span>
+                <div class="plan-top">
+                  <div class="detail">
+                    <ul class="detail-list">
+                      <li>
+                        ガスコンロ
+                      </li>
+                      <li>
+                        冷蔵庫
+                      </li>
+                      <li>
+                        電気ケトル
+                      </li>
+                      <li>
+                        電子レンジ
+                      </li>
+                      <li>
+                        食器（箸、茶碗、お椀、皿、コップなど）
+                      </li>
+                      <li>
+                        調理器具（菜箸、お玉、鍋、 フライパンなど）
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="detail">
+                    <p>【お風呂・洗面】</p>
+                    <ul>
+                      <li>
+                        シャンプー
+                      </li>
+                      <li>
+                        コンディショナー
+                      </li>
+                      <li>
+                        ボディソープ
+                      </li>
+                      <li>
+                        ドライヤー
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="detail">
+                    <p>【トイレ】</p>
+                    <ul>
+                      <li>
+                        洋式×１
+                      </li>
+                      <li>
+                        男子用トイレ×１
+                      </li>
+                    </ul>
+                    <p>【寝具】</p>
+                    <ul>
+                      <li>
+                        お布団、枕、毛布（15組）
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <span>◆有料設備</span>
+                <div class="plan-bottom">
+                  <div class="detail">
+                    <p>【食品・飲料】</p>
+                    <ul>
+                      <li>
+                        スナック菓子／000円
+                      </li>
+                      <li>
+                        カップ麺／000円
+                      </li>
+                      <li>
+                        おつまみ／000円
+                      </li>
+                      <li>
+                        ペットボトル飲料／000円
+                      </li>
+                      <li>
+                        缶酎ハイ／000円
+                      </li>
+                      <li>
+                        缶ビール／000円
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="detail">
+                    <p>【ランドリー】</p>
+                    <ul>
+                      <li>
+                        フェイスタオル／000円
+                      </li>
+                      <li>
+                        バスタオル／000円
+                      </li>
+                      <li>
+                        洗濯機／000円
+                      </li>
+                      <li>
+                        乾燥機／000円
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-reserve" id="reserve">
+        <div class="l-reserve-container">
+          <!-- page css files end -->
+          <div class="grid1">
+            <div class="title-box">
+              <img class="icon" src="common/svg/sun.png" />
+              <div class="title">
+                ご予約
+              </div>
+              <div class="title-sub">Rese <br /><br />rve</div>
+            </div>
+            <div class="title-bottom">
+              <img class="work-img" src="common/svg/work.svg" />
+            </div>
+          </div>
+          <!-- page css files end -->
+          <div class="grid2">
+            <div class="button-box">
+              <div class="line">
+                <div class="title">LINE から予約する</div>
+                <p class="detail">
+                  LINE公式での予約をご希望の方は、公式アカウントを友だち追加してください。追加後、メッセージ画面から『予約』と入力していただければ、予約手続きにお進みいただけます。
+                </p>
+                <div class="btn-box">
+                  <a class="add-btn">友だち追加する</a>
+                </div>
+              </div>
+              <div class="airbnb">
+                <div class="title">airbnb から予約する</div>
+
+                <p class="detail">
+                  LINE公式での予約をご希望の方は、公式アカウントを友だち追加してください。追加後、メッセージ画面から『予約』と入力していただければ、予約手続きにお進みいただけます。
+                </p>
+                <div class="btn-box">
+                  <a class="move-btn">airbnbサイトへ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer-contener">
+      <a href="#" class="footer-box">
+        <img class="icon" src="common/svg/footer-btn.svg" />
+      </a>
+    </footer>
+    <!-- contents end -->
+    <!-- page js files start -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="common/js/lp.js"></script>
+    <!-- page js files end -->
+  </body>
+</html>

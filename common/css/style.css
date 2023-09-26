@@ -1,0 +1,127 @@
+Reset some basic elements */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove anchor outline */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Remove quotes from blockquotes */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Remove focus outline from elements */
+:focus {
+  outline: 0;
+}
+
+/* Reset fieldset and legend */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Reset form elements */
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Reset image handling */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Reset table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset visual formatting for audio and video elements */
+audio,
+canvas,
+progress,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Reset button and input */
+button,
+input {
+  overflow: visible;
+}
+
+/* Reset button style */
+button,
+select {
+  text-transform: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.u-mt-10 {
+  margin-top: 10px;
+}
+
+.header {
+  color: #fff;
+  padding: 20px;
+}
+
+body {
+  color: red;
+} /*# sourceMappingURL=style.css.map

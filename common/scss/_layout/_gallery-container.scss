@@ -1,0 +1,108 @@
+.l-gallery {
+  width: 100%;
+  height: 800px;
+
+  .l-gallery-container {
+    display: flex;
+    // grid-template-rows: 400px 400px;
+    padding: 84px;
+    // grid-template-columns: 300px minmax(0, 4fr);
+
+    .grid1 {
+      align-items: center;
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        width: 40px;
+      }
+
+      .title-box {
+        width: 300px;
+        line-height: 100%;
+        position: relative;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        .title {
+          -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          font-size: 30px;
+          line-height: 30px;
+          color: #333333;
+          z-index: 1;
+        }
+        .title-child {
+          font-size: 20px;
+          color: #333333;
+        }
+        .title-sub {
+          text-align: start;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          color: $green;
+          font-size: 60px;
+          opacity: 0.2;
+          line-height: 50px;
+          font-weight: bold;
+        }
+      }
+      .title-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        .tubomi-img {
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 20px;
+        }
+        .instagram-btn {
+          margin-top: 50px;
+          color: #333333;
+          border: 1px solid #333333;
+          font-size: 10px;
+          padding: 13px 45px;
+          background-color: #ffffff;
+          line-height: 10px;
+          letter-spacing: 1px;
+          background-color: rgba(255, 255, 255, 0);
+          &:hover {
+            color: #fff;
+            background: $green;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+    .card {
+      width: 200px;
+      height: 200px;
+      margin: 7px;
+      flex-shrink: 0;
+      display: flex;
+      .card-img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .table-wrap {
+      padding-top: 40px;
+      overflow-x: scroll;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      white-space: nowrap;
+    }
+  }
+}
