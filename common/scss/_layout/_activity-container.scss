@@ -3,10 +3,16 @@
   height: 800px;
 
   .l-activity-container {
-    display: grid;
-    grid-template-rows: 400px 400px;
-    padding: 84px;
-    grid-template-columns: 300px 4fr;
+    // display: grid;
+
+    @include pc {
+      grid-template-rows: 400px 400px;
+      padding: 84px;
+      grid-template-columns: 300px 4fr;
+    }
+    @include sp {
+      grid-auto-columns: auto;
+    }
   }
   .grid1 {
     grid-row: 1/2;

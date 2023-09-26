@@ -1,0 +1,33 @@
+@include pc {
+  .scroll-contener {
+    // background: repeat-y url("../img/background-image.png");
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-bottom: 50px;
+
+    .icon {
+      text-align: center;
+      align-items: center;
+      text-align: center;
+      width: 80px;
+    }
+  }
+}
+
+@include sp {
+  .scroll-contener {
+    background: repeat-y url("../img/background-image.png");
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-bottom: 50px;
+
+    .icon {
+      width: 80px;
+    }
+  }
+}

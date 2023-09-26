@@ -1,23 +1,51 @@
-.c-reservation-btn {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  right: 0%;
-  text-align: center;
-  justify-content: center;
-  width: 130.32px;
-  height: 110.4px;
-  cursor: pointer;
-  color: white;
-  background-color: $green;
+@include pc {
+  .c-reservation-btn {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    text-align: center;
+    justify-content: center;
+    width: 130.32px;
+    height: 110.4px;
+    cursor: pointer;
+    color: white;
+    background-color: $green;
 
-  .icon {
-    padding-top: 25px;
+    .icon {
+      padding-top: 25px;
+    }
+    .title {
+      font-size: 15px;
+    }
+    .description {
+      font-size: 10px;
+    }
   }
-  .title {
-    font-size: 15px;
-  }
-  .description {
-    font-size: 10px;
+}
+
+@include sp {
+  .c-reservation-btn {
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    text-align: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    color: white;
+    background-color: $green;
+
+    .icon {
+      padding-top: 17px;
+    }
+    .title {
+      visibility: hidden;
+    }
+    .description {
+      visibility: hidden;
+    }
   }
 }

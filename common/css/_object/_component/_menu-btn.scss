@@ -9,7 +9,10 @@
   appearance: none;
   padding: 0;
   cursor: pointer;
-  left: 24px;
+  left: 34px;
+  @include sp {
+    left: 0px;
+  }
 }
 .hamburger-menu__bar {
   display: inline-block;
@@ -140,4 +143,7 @@
 .side-menu.open-menu {
   width: 25%;
   height: 100%;
+  @include sp {
+    width: 90%;
+  }
 }
