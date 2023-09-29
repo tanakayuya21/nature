@@ -1,18 +1,13 @@
 @include pc {
   .scroll-contener {
-    // background: repeat-y url("../img/background-image.png");
+    background: repeat url("../img/background-image.png");
     text-align: center;
     align-items: center;
-    text-align: center;
     cursor: pointer;
-    padding-top: 0px;
+    padding-top: -30px;
     padding-bottom: 50px;
-
     .icon {
-      text-align: center;
-      align-items: center;
-      text-align: center;
-      width: 80px;
+      width: 60px;
     }
   }
 }
@@ -25,9 +20,8 @@
     cursor: pointer;
     padding-top: 0px;
     padding-bottom: 50px;
-
     .icon {
-      width: 80px;
+      width: 60px;
     }
   }
 }

@@ -1,0 +1,143 @@
+.modal-container {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 50%);
+  padding: 20px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before {
+  z-index: 999;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 80%;
+}
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+/*モーダル枠の指定*/
+.modal-body {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 500px;
+  width: 80%;
+  z-index: 7;
+}
+
+/*モーダルを閉じるボタンの指定*/
+.modal-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content {
+  z-index: 7;
+  background: #fff;
+  text-align: center;
+  height: 80%;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+  .card {
+    height: 80%;
+
+    padding: 0 0px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .card-frame {
+      align-items: center;
+      .card-img {
+        width: 110px;
+        height: 110px;
+        border-radius: 100px;
+      }
+      .card-title {
+        position: relative;
+        padding-top: 10px;
+        color: #333333;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+    .card-title-sub {
+      padding-bottom: 40px;
+      font-size: 10px;
+      color: #333333;
+    }
+    .card-description {
+      text-align: start;
+      color: #333333;
+      font-size: 12px;
+      padding-bottom: 40px;
+    }
+
+    .pager-box {
+      display: flex;
+      .pager-back {
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        padding-right: 40px;
+        &::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+          border: 0;
+          border-top: solid 2px #333;
+          border-left: solid 2px #333;
+          position: absolute;
+          top: 50%;
+          left: -15px;
+          margin-top: -4px;
+          transform: rotate(-45deg);
+        }
+      }
+      .pager-next {
+        position: relative;
+        text-align: center;
+        color: #333333;
+        font-size: 12px;
+        padding-left: 40px;
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          border: 0;
+          border-top: solid 2px #333;
+          border-left: solid 2px #333;
+          position: absolute;
+          top: 50%;
+          right: -15px;
+          margin-top: -4px;
+          transform: rotate(125deg);
+        }
+      }
+    }
+  }
+}

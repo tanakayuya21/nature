@@ -1,0 +1,20 @@
+@include pc {
+  .footer-contener {
+    background: repeat url("../img/background-image.png");
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+@include sp {
+  .footer-contener {
+    background: repeat url("../img/background-image.png");
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+}
