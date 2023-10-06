@@ -156,7 +156,6 @@ body {
     height: 110.4px;
     cursor: pointer;
     color: white;
-    background-color: #84bba0;
   }
   .c-reservation-btn .icon {
     padding-top: 25px;
@@ -180,7 +179,6 @@ body {
     height: 55px;
     cursor: pointer;
     color: white;
-    background-color: #84bba0;
   }
   .c-reservation-btn .icon {
     padding-top: 17px;
@@ -956,6 +954,75 @@ body {
     transition: all 0.5s ease;
   }
 }
+.swiper-wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  height: 300px !important;
+}
+
+.swiper-slide {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  color: #ffffff;
+  width: 10%;
+  height: 150px;
+  text-align: center;
+  text-align: center;
+  margin-right: 15px;
+  background-color: #d6d5d5;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  position: absolute;
+  top: -150px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../common/svg/arrow-left.svg");
+}
+
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -150px;
+  background-image: url("../../common/svg/arrow-right.svg");
+}
+
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .p-activity {
     width: 100%;
@@ -2274,22 +2341,22 @@ body {
     width: 100%;
     height: 1000px;
   }
-  .p-gallery .p-gallery__container {
+  .p-gallery__container {
     display: flex;
     flex-direction: column;
     padding-left: 51px;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 {
+  .p-gallery__container__grid1 {
     align-items: center;
     position: relative;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .icon {
+  .p-gallery__container__grid1 .icon {
     position: absolute;
     top: 20px;
     left: 35px;
     width: 40px;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box {
+  .p-gallery__container__grid1 .title-box {
     width: 300px;
     line-height: 100%;
     position: relative;
@@ -2300,7 +2367,7 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box .title {
+  .p-gallery__container__grid1 .title-box .title {
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 30px;
@@ -2308,11 +2375,11 @@ body {
     color: #333333;
     z-index: 1;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box .title-child {
+  .p-gallery__container__grid1 .title-box .title-child {
     font-size: 20px;
     color: #333333;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box .title-sub {
+  .p-gallery__container__grid1 .title-box .title-sub {
     text-align: start;
     align-items: center;
     justify-content: center;
@@ -2323,13 +2390,13 @@ body {
     opacity: 0.2;
     line-height: 50px;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box .tubomi-img {
+  .p-gallery__container__grid1 .title-box .tubomi-img {
     position: absolute;
     width: 50px;
     top: 200px;
     right: 10px;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box .instagram-btn {
+  .p-gallery__container__grid1 .title-box .instagram-btn {
     visibility: hidden;
     margin-top: 50px;
     color: #333333;
@@ -2341,31 +2408,31 @@ body {
     letter-spacing: 1px;
     background-color: rgba(255, 255, 255, 0);
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid1 .title-box .instagram-btn:hover {
+  .p-gallery__container__grid1 .title-box .instagram-btn:hover {
     color: #fff;
     background: #84bba0;
     transition: all 0.5s ease;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid2 {
+  .p-gallery__container__grid2 {
     overflow-x: scroll;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid2 .table {
+  .p-gallery__container__grid2 .table {
     width: 100%;
     border-collapse: collapse;
     white-space: nowrap;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid2 .table .card {
+  .p-gallery__container__grid2 .table .card {
     width: 200px;
     height: 200px;
     margin: 7px;
     flex-shrink: 0;
     display: flex;
   }
-  .p-gallery .p-gallery__container .p-gallery__container__grid2 .table .card .card-img {
+  .p-gallery__container__grid2 .table .card .card-img {
     height: 100%;
     width: 100%;
   }
-  .p-gallery .p-gallery__container .instagram-btn-v {
+  .p-gallery__container .instagram-btn-v {
     text-align: center;
     margin-top: 30px;
     margin-right: 51px;
@@ -2378,7 +2445,7 @@ body {
     letter-spacing: 1px;
     background-color: rgba(255, 255, 255, 0);
   }
-  .p-gallery .p-gallery__container .instagram-btn-v:hover {
+  .p-gallery__container .instagram-btn-v:hover {
     color: #fff;
     background: #84bba0;
     transition: all 0.5s ease;

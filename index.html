@@ -9,6 +9,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <link rel="icon" href="common/img/module/favicon.png" />
     <!-- SNS OGP start -->
     <meta property="og:title" content="" />
@@ -104,7 +109,31 @@
               <p>古民家関連動画</p>
               トゥラクエ <br />TOLAND QUEST
             </div>
-            <div class="card-box">
+
+            <div class="swiper">
+              <!-- 必要に応じたwrapper -->
+              <div class="swiper-wrapper">
+                <!-- スライド -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 4</div>
+              </div>
+              <!-- 必要に応じてページネーション -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- 必要に応じてナビボタン -->
+              <!-- <a href="" class="left-btn"></a>
+              <a href="" class="right-btn"></a> -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- <div class="card-box">
               <a href="" class="left-btn"></a>
               <div class="box">
                 <div class="card">
@@ -139,7 +168,7 @@
                 </div>
               </div>
               <a href="" class="right-btn"></a>
-            </div>
+            </div> -->
             <a href="" class="youtube-btn">YOUTUBE へ</a>
           </div>
         </div>
@@ -764,6 +793,7 @@
     <!-- contents end -->
     <!-- page js files start -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="common/js/lp.js"></script>
     <!-- page js files end -->
   </body>
