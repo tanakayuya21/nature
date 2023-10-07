@@ -1,16 +1,16 @@
 @include pc {
   .c-reservation-btn {
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     top: 0;
     right: 0%;
     text-align: center;
     justify-content: center;
+    background-color: #84bba0;
     width: 130.32px;
     height: 110.4px;
     cursor: pointer;
     color: white;
-    // background-color: $green;
 
     .icon {
       padding-top: 25px;
@@ -36,6 +36,7 @@
     height: 55px;
     cursor: pointer;
     color: white;
+    background-color: #84bba0;
     // background-color: $green;
 
     .icon {

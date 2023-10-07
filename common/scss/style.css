@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Reset some basic elements */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 html,
 body,
 h1,
@@ -103,6 +104,7 @@ select {
 body {
   background: repeat url("../img/background-image.png");
   width: 100%;
+  font-family: "Noto Serif JP", serif;
 }
 
 .container {
@@ -139,6 +141,13 @@ body {
     padding-bottom: 40px;
   }
 }
+.l-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: repeat-y url("../img/background-image.png");
+}
+
 .btn {
   padding: 10px 20px;
   color: #fff;
@@ -146,12 +155,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .c-reservation-btn {
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     top: 0;
     right: 0%;
     text-align: center;
     justify-content: center;
+    background-color: #84bba0;
     width: 130.32px;
     height: 110.4px;
     cursor: pointer;
@@ -179,6 +189,7 @@ body {
     height: 55px;
     cursor: pointer;
     color: white;
+    background-color: #84bba0;
   }
   .c-reservation-btn .icon {
     padding-top: 17px;
@@ -388,6 +399,7 @@ body {
 @media screen and (min-width: 768px) {
   .scroll-contener {
     background: repeat url("../img/background-image.png");
+    display: center;
     text-align: center;
     align-items: center;
     cursor: pointer;
@@ -395,7 +407,7 @@ body {
     padding-bottom: 50px;
   }
   .scroll-contener .icon {
-    width: 60px;
+    width: 50px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -601,6 +613,7 @@ body {
     line-height: 30px;
     color: #333333;
     z-index: 1;
+    font-family: "kaisou", serif;
   }
   .p-about__container__grid1 .title-box .title-child {
     font-size: 15px;
@@ -609,6 +622,10 @@ body {
     padding-right: 5px;
   }
   .p-about__container__grid1 .title-box .title-sub {
+    font-weight: 300;
+    font-style: normal;
+    font-weight: normal;
+    font-style: normal;
     text-align: start;
     align-items: center;
     justify-content: center;
@@ -618,7 +635,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
-    font-weight: bold;
+    font-family: "Turret Road", cursive;
   }
   .p-about__container__grid1 .title-bottom {
     display: flex;
@@ -626,6 +643,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    font-family: "kaisou", serif;
   }
   .p-about__container__grid1 .title-bottom .matu-img {
     width: 120px;
@@ -814,6 +832,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-about__container__grid1 .title-bottom {
     display: flex;
@@ -1027,12 +1046,14 @@ body {
   .p-activity {
     width: 100%;
     height: 800px;
+    align-items: center;
   }
   .p-activity__container {
     display: grid;
     grid-template-rows: 400px 400px;
     padding: 84px;
     grid-template-columns: 300px 3fr;
+    align-items: center;
   }
   .p-activity__container__grid1 {
     grid-row: 1/2;
@@ -1053,7 +1074,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
   }
   .p-activity__container__grid1 .title-box .title {
     writing-mode: vertical-rl;
@@ -1071,6 +1091,7 @@ body {
     padding-right: 5px;
   }
   .p-activity__container__grid1 .title-box .title-sub {
+    font-family: "MS Pゴシック";
     text-align: start;
     align-items: center;
     justify-content: center;
@@ -1080,6 +1101,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-activity__container__grid1 .title-bottom {
     display: flex;
@@ -1197,6 +1219,7 @@ body {
   .p-activity {
     width: 100%;
     height: 100%;
+    align-items: center;
   }
   .p-activity__container {
     padding: 51px;
@@ -1248,6 +1271,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-activity__container__grid1 .title-bottom {
     display: flex;
@@ -1291,8 +1315,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 650px;
-    overflow: scroll;
+    height: auto;
   }
   .p-activity__container__grid2 .box .card {
     display: flex;
@@ -1376,6 +1399,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-roorule__container__grid1 .title-box .bamboo-img {
     position: absolute;
@@ -1705,6 +1729,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-roorule__container__grid1 .title-box .bamboo-img {
     position: absolute;
@@ -1949,6 +1974,7 @@ body {
   }
   .p-staff__container {
     display: grid;
+    align-items: center;
     grid-template-rows: 400px 400px;
     padding: 84px;
     grid-template-columns: 300px 4fr;
@@ -1998,6 +2024,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-staff__container__grid1 .title-box .icon-bottom {
     width: 45px;
@@ -2114,15 +2141,19 @@ body {
   .p-staff {
     width: 100%;
     height: 900px;
+    align-items: center;
   }
   .p-staff__container {
-    padding: 51px;
+    padding-top: 51px;
   }
   .p-staff__container__grid1 {
     grid-row: 1/2;
     grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     position: relative;
+    align-items: center;
   }
   .p-staff__container__grid1 .title-box {
     line-height: 100%;
@@ -2165,6 +2196,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-staff__container__grid1 .title-box .icon-bottom {
     position: absolute;
@@ -2175,24 +2207,27 @@ body {
     transform: rotate(265deg);
   }
   .p-staff__container__grid1 .icon-meeting {
+    align-items: center;
     width: 150px;
     position: absolute;
     bottom: -85px;
-    left: 25%;
+    left: 30%;
   }
   .p-staff__container__grid2 {
     padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .p-staff__container__grid2 .card-box {
     display: flex;
-    align-items: center;
-    text-align: center;
   }
   .p-staff__container__grid2 .box {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 300px;
-    height: 320px;
+    height: 200px;
   }
   .p-staff__container__grid2 .box .card-user {
     box-sizing: border-box;
@@ -2200,9 +2235,6 @@ body {
     height: 150px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .p-staff__container__grid2 .box .card-user .card-frame {
     align-items: center;
   }
   .p-staff__container__grid2 .box .card-user .card-frame .card-img {
@@ -2282,6 +2314,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-gallery__container__grid1 .title-box .tubomi-img {
     width: 50px;
@@ -2389,6 +2422,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 50px;
+    font-family: "Turret Road", cursive;
   }
   .p-gallery__container__grid1 .title-box .tubomi-img {
     position: absolute;
@@ -2503,6 +2537,7 @@ body {
     opacity: 0.2;
     line-height: 25px;
     font-weight: bold;
+    font-family: "Turret Road", cursive;
   }
   .p-natasyou__container__grid1 .title-bottom {
     display: flex;
@@ -2835,8 +2870,9 @@ body {
   }
   .p-natasyou__container__grid2 .box {
     display: flex;
-    width: 90%;
-    height: 350px;
+    align-items: center;
+    width: 100%;
+    height: 450px;
     overflow-x: scroll;
   }
   .p-natasyou__container__grid2 .box .card {
@@ -2920,7 +2956,7 @@ body {
   .p-reserve__container {
     display: grid;
     padding: 84px;
-    grid-template-columns: 300px 4fr;
+    grid-template-columns: 300px 1000px;
   }
   .p-reserve__container__grid1 {
     grid-row: 1/2;
@@ -2962,6 +2998,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 25px;
+    font-family: "Turret Road", cursive;
   }
   .p-reserve__container__grid1 .title-box .work-img {
     width: 50px;
@@ -2990,7 +3027,7 @@ body {
   .p-reserve__container__grid2 .button-box .line::after {
     content: "";
     position: absolute;
-    top: -2px;
+    top: -3px;
     left: 0px;
     width: 20%;
     height: 3px;
@@ -3000,7 +3037,7 @@ body {
     content: "";
     position: absolute;
     left: -47px;
-    top: 43px;
+    top: 44px;
     width: 20%;
     height: 3px;
     background: #84c3a0; /*左：ピンク*/
@@ -3037,7 +3074,7 @@ body {
   .p-reserve__container__grid2 .button-box .airbnb::after {
     content: "";
     position: absolute;
-    top: -2px;
+    top: -3px;
     left: 0px;
     width: 20%;
     height: 3px;
@@ -3047,7 +3084,7 @@ body {
     content: "";
     position: absolute;
     left: -47px;
-    top: 43px;
+    top: 44px;
     width: 20%;
     height: 3px;
     background: #f98469; /*左：ピンク*/
@@ -3127,6 +3164,7 @@ body {
     font-size: 60px;
     opacity: 0.2;
     line-height: 25px;
+    font-family: "Turret Road", cursive;
   }
   .p-reserve__container__grid1 .title-box .work-img {
     position: absolute;
@@ -3271,30 +3309,38 @@ body {
 @media screen and (min-width: 768px) {
   .p-home {
     width: 100%;
-    height: 650px;
     color: #333333;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
   .p-home .home-img {
     position: relative;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: none;
+       object-fit: none;
     width: 100%;
-    height: 100%;
+    height: 700px;
+    align-items: start;
+    margin: 0;
   }
   .p-home .title {
     position: absolute;
-    top: 18%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 45px;
+    font-family: YuMincho, "Yu Mincho", serif;
+    font-weight: normal;
   }
   .p-home .description {
     position: absolute;
-    top: 23%;
+    top: 20%;
     left: 50%;
     margin-left: -20px;
     transform: translate(-50%, -50%);
     font-size: 10px;
+    font-family: "Turret Road", cursive;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3322,6 +3368,8 @@ body {
     left: 53%;
     transform: translate(-50%, -50%);
     font-size: 43px;
+    font-family: YuMincho, "Yu Mincho", serif;
+    font-weight: normal;
   }
   .p-home .description {
     position: absolute;

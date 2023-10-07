@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 @include pc {
   .p-about {
     width: 100%;
@@ -28,6 +29,7 @@
           justify-content: center;
           align-items: center;
           align-items: center;
+
           .title {
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
@@ -37,6 +39,7 @@
             line-height: 30px;
             color: #333333;
             z-index: 1;
+            font-family: $kaiso-fontFamily;
           }
           .title-child {
             font-size: 15px;
@@ -45,6 +48,10 @@
             padding-right: 5px;
           }
           .title-sub {
+            font-weight: 300;
+            font-style: normal;
+            font-weight: normal;
+            font-style: normal;
             text-align: start;
             align-items: center;
             justify-content: center;
@@ -54,7 +61,40 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
-            font-weight: bold;
+            // font-family: "AR One Sans", sans-serif;
+            // font-family: "Athiti", sans-serif;
+            // font-family: "Barlow Condensed", sans-serif;
+            // font-family: "Habibi", serif;
+            // font-family: "Noto Sans NKo Unjoined", sans-serif;
+            // font-family: "Roboto", sans-serif;
+            // font-family: "Titillium Web", sans-serif;
+            // font-family: "Tomorrow", sans-serif;
+
+            // font-family: "Aldrich", sans-serif;
+            // font-family: "AR One Sans", sans-serif;
+            // font-family: "Athiti", sans-serif;
+            // font-family: "Barlow Condensed", sans-serif;
+            // font-family: "Habibi", serif;
+            // font-family: "Noto Sans NKo Unjoined", sans-serif;
+            // font-family: "Roboto", sans-serif;
+            // font-family: "Titillium Web", sans-serif;
+            // font-family: "Tomorrow", sans-serif;
+
+            // font-family: "AR One Sans", sans-serif;
+            // font-family: "Athiti", sans-serif;
+            // font-family: "Audiowide", cursive;
+            // font-family: "Barlow Condensed", sans-serif;
+            // font-family: "Habibi", serif;
+            // font-family: "Noto Sans NKo Unjoined", sans-serif;
+            // font-family: "Roboto", sans-serif;
+            // font-family: "Titillium Web", sans-serif;
+            // font-family: "Tomorrow", sans-serif;
+
+            // font-family: "Audiowide", cursive;
+            // font-family: "BenchNine", sans-serif;
+            // font-family: "Quantico", sans-serif;
+            // font-family: "Kdam Thmor Pro", sans-serif;
+            font-family: $side-fontFamily;
           }
         }
         .title-bottom {
@@ -63,6 +103,7 @@
           align-items: center;
           justify-content: center;
           padding-top: 20px;
+          font-family: $kaiso-fontFamily;
           .matu-img {
             width: 120px;
             display: flex;
@@ -76,6 +117,7 @@
             justify-content: center;
             flex-direction: column;
             font-size: 18px;
+
             p {
               font-size: 10px;
               text-align: left;
@@ -255,6 +297,7 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
+            font-family: $side-fontFamily;
           }
         }
         .title-bottom {

@@ -1,13 +1,14 @@
 @include pc {
   .scroll-contener {
     background: repeat url("../img/background-image.png");
+    display: center;
     text-align: center;
     align-items: center;
     cursor: pointer;
     padding-top: -30px;
     padding-bottom: 50px;
     .icon {
-      width: 60px;
+      width: 50px;
     }
   }
 }

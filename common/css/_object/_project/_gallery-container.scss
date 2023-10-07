@@ -2,7 +2,6 @@
   .p-gallery {
     width: 100%;
     height: 700px;
-
     &__container {
       display: grid;
       grid-template-rows: 400px 400px;
@@ -52,6 +51,7 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
+            font-family: $side-fontFamily;
           }
           .tubomi-img {
             width: 50px;
@@ -166,6 +166,7 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
+            font-family: $side-fontFamily;
           }
           .tubomi-img {
             position: absolute;

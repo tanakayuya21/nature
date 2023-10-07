@@ -5,7 +5,7 @@
     &__container {
       display: grid;
       padding: 84px;
-      grid-template-columns: 300px 4fr;
+      grid-template-columns: 300px 1000px;
 
       &__grid1 {
         grid-row: 1/2;
@@ -46,6 +46,7 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 25px;
+            font-family: $side-fontFamily;
           }
           .work-img {
             width: 50px;
@@ -73,7 +74,7 @@
             &::after {
               content: "";
               position: absolute;
-              top: -2px;
+              top: -3px;
               left: 0px;
               width: 20%;
               height: 3px;
@@ -83,7 +84,7 @@
               content: "";
               position: absolute;
               left: -47px;
-              top: 43px;
+              top: 44px;
               width: 20%;
               height: 3px;
               background: #84c3a0; /*左：ピンク*/
@@ -121,7 +122,7 @@
             &::after {
               content: "";
               position: absolute;
-              top: -2px;
+              top: -3px;
               left: 0px;
               width: 20%;
               height: 3px;
@@ -132,7 +133,7 @@
               position: absolute;
 
               left: -47px;
-              top: 43px;
+              top: 44px;
               width: 20%;
               height: 3px;
               background: #f98469; /*左：ピンク*/
@@ -219,6 +220,7 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 25px;
+            font-family: $side-fontFamily;
           }
 
           .work-img {
