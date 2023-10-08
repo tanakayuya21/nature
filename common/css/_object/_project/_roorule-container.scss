@@ -55,7 +55,6 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
-            font-family: $side-fontFamily;
           }
           .bamboo-img {
             position: absolute;
@@ -361,9 +360,10 @@
 
     &__container {
       padding: 60px;
+      display: block;
+      align-items: center;
 
       &__grid1 {
-        align-items: center;
         position: relative;
 
         .title-box {
@@ -372,7 +372,6 @@
           padding-bottom: 100px;
           display: flex;
           justify-content: center;
-          align-items: center;
           align-items: center;
           .icon {
             position: absolute;
@@ -385,8 +384,8 @@
             writing-mode: vertical-rl;
             text-orientation: upright;
             font-size: 30px;
-            letter-spacing: 6.8px;
-            line-height: 30px;
+            // letter-spacing: 6.8px;
+            // line-height: 30px;
             color: #333333;
             z-index: 1;
           }
@@ -394,7 +393,7 @@
             font-size: 15px;
             color: #333333;
             padding-top: 5px;
-            padding-right: 5px;
+            // padding-right: 5px;
           }
           .title-sub {
             text-align: start;
@@ -406,7 +405,6 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
-            font-family: $side-fontFamily;
           }
           .bamboo-img {
             position: absolute;
@@ -421,8 +419,11 @@
         flex-direction: column;
         width: 100%;
         background-color: #fff;
-        padding: 0 10px;
+        // padding: 0 10px;
+
         .arrow-box {
+          padding-left: 10px;
+          padding-right: 10px;
           text-align: center;
           align-items: center;
           display: flex;
@@ -455,12 +456,16 @@
         }
 
         .description {
-          padding: 0px 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+
           align-items: center;
           font-size: 10px;
           color: #333333;
           line-height: 22px;
           .description-top {
+            padding-left: 10px;
+            padding-right: 10px;
             .page {
               visibility: hidden;
               color: #808080;
@@ -472,6 +477,8 @@
             }
           }
           .description-bottom {
+            padding-left: 10px;
+            padding-right: 10px;
             padding-top: 20px;
             justify-content: end;
 

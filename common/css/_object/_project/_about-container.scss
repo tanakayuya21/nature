@@ -7,7 +7,7 @@
     &__container {
       display: grid;
       grid-template-rows: 400px 200px;
-      padding: 84px;
+      padding: 100px;
       grid-template-columns: 300px 1000px;
 
       &__grid1 {
@@ -61,39 +61,6 @@
             font-size: 60px;
             opacity: 0.2;
             line-height: 50px;
-            // font-family: "AR One Sans", sans-serif;
-            // font-family: "Athiti", sans-serif;
-            // font-family: "Barlow Condensed", sans-serif;
-            // font-family: "Habibi", serif;
-            // font-family: "Noto Sans NKo Unjoined", sans-serif;
-            // font-family: "Roboto", sans-serif;
-            // font-family: "Titillium Web", sans-serif;
-            // font-family: "Tomorrow", sans-serif;
-
-            // font-family: "Aldrich", sans-serif;
-            // font-family: "AR One Sans", sans-serif;
-            // font-family: "Athiti", sans-serif;
-            // font-family: "Barlow Condensed", sans-serif;
-            // font-family: "Habibi", serif;
-            // font-family: "Noto Sans NKo Unjoined", sans-serif;
-            // font-family: "Roboto", sans-serif;
-            // font-family: "Titillium Web", sans-serif;
-            // font-family: "Tomorrow", sans-serif;
-
-            // font-family: "AR One Sans", sans-serif;
-            // font-family: "Athiti", sans-serif;
-            // font-family: "Audiowide", cursive;
-            // font-family: "Barlow Condensed", sans-serif;
-            // font-family: "Habibi", serif;
-            // font-family: "Noto Sans NKo Unjoined", sans-serif;
-            // font-family: "Roboto", sans-serif;
-            // font-family: "Titillium Web", sans-serif;
-            // font-family: "Tomorrow", sans-serif;
-
-            // font-family: "Audiowide", cursive;
-            // font-family: "BenchNine", sans-serif;
-            // font-family: "Quantico", sans-serif;
-            // font-family: "Kdam Thmor Pro", sans-serif;
             font-family: $side-fontFamily;
           }
         }
@@ -111,7 +78,7 @@
             justify-content: center;
           }
           .lang {
-            padding-top: 50px;
+            padding-top: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -128,8 +95,9 @@
             margin-top: 20px;
             color: #333333;
             border: 1px solid #333333;
-            font-size: 10px;
-            padding: 13px 45px;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 18px 45px;
             background-color: #ffffff;
             line-height: 10px;
             letter-spacing: 1px;
@@ -163,79 +131,12 @@
       &__grid3 {
         grid-row: 2/3;
         grid-column: 2/3;
-        margin-right: 60px;
-        .card-box {
-          display: flex;
-          padding: 80px 0px 30px 30px;
-          .left-btn {
-            border: 1px solid #333333;
-            border-radius: 50px;
-            width: 35px;
-            min-width: 35px;
-            height: 35px;
-            position: relative;
-            margin-right: 20px;
+        display: flex;
+        align-items: start;
+        // padding: 10px 300px 30px 50px;
+        margin-right: 0px;
+        padding-top: 30px;
 
-            &::before {
-              content: "";
-              border: 0;
-              border-top: solid 1px #333333;
-              border-right: solid 1px #333333;
-              display: inline-block;
-              width: 10px;
-              height: 10px;
-              position: absolute;
-              top: 50%;
-              right: 10px;
-              transform: translateY(-50%) rotate(-135deg);
-            }
-          }
-          .right-btn {
-            border: 1px solid #333333;
-            border-radius: 50px;
-            width: 35px;
-            height: 35px;
-            margin-left: 20px;
-            position: relative;
-            &::before {
-              content: "";
-              border: 0;
-              border-top: solid 1px #333333;
-              border-right: solid 1px #333333;
-              display: inline-block;
-              width: 10px;
-              height: 10px;
-              position: absolute;
-              top: 50%;
-              right: 15px;
-              transform: translateY(-50%) rotate(45deg);
-            }
-          }
-          .box {
-            display: flex;
-            width: 800px;
-            height: 150px;
-            margin-top: -60px;
-            overflow-x: scroll;
-            padding: 0px 20px;
-            .card {
-              width: 22%;
-              margin: 7px;
-              flex-shrink: 0;
-              display: flex;
-              flex-direction: column;
-              .card-img {
-                height: 110px;
-                width: 200px;
-              }
-              .card-description {
-                height: 110px;
-                color: #333333;
-                font-size: 12px;
-              }
-            }
-          }
-        }
         .lang {
           visibility: hidden;
         }
@@ -252,15 +153,13 @@
     width: 100%;
     height: 200%;
     &__container {
-      padding: 51px;
-
       &__grid1 {
         align-items: center;
         position: relative;
         .icon {
           position: absolute;
           top: 20px;
-          left: 35px;
+          left: 75px;
           width: 40px;
         }
         .title-box {
@@ -307,9 +206,8 @@
           .matu-img {
             position: absolute;
             width: 80px;
-            // display: flex;
             bottom: 70px;
-            right: 0px;
+            right: 50px;
           }
           .lang {
             visibility: hidden;
@@ -320,12 +218,16 @@
             justify-content: center;
             flex-direction: column;
             font-size: 18px;
+            line-height: 10px;
+
             p {
+              padding-bottom: 80px;
               font-size: 10px;
               text-align: left;
               padding-right: 80px;
             }
           }
+
           .youtube-btn {
             visibility: hidden;
             margin-top: 20px;
@@ -351,6 +253,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-right: 51px;
+        padding-left: 51px;
         .description {
           width: 100%;
           padding-right: 12px;
@@ -370,45 +274,16 @@
         position: relative;
         flex-direction: column;
         justify-content: center;
-        .card-box {
-          display: flex;
-          justify-content: space-between;
-          padding: 80px 0px 30px 0px;
-          .left-btn {
-            visibility: hidden;
-          }
-          .right-btn {
-            visibility: hidden;
-          }
 
-          .box {
-            display: flex;
-            width: 800px;
-            height: 150px;
-            margin-top: -60px;
-            overflow-x: scroll;
-            padding: 0px 20px;
-            .card {
-              width: 150px;
-              margin: 7px;
-              flex-shrink: 0;
-              display: flex;
-              flex-direction: column;
-              .card-img {
-                height: 110px;
-              }
-              .card-description {
-                color: #333333;
-                font-size: 12px;
-              }
-            }
-          }
-        }
+        align-items: end;
+        padding-left: 51px;
+        padding-right: 0px;
+
         .lang {
           padding-top: 30px;
           display: flex;
           align-items: start;
-          text-align: center;
+          text-align: start;
           flex-direction: column;
           font-size: 18px;
           p {
@@ -426,13 +301,14 @@
           text-align: center;
           justify-content: center;
           flex-direction: column;
-          margin-top: 300px;
+          margin-top: 400px;
+          font-weight: bold;
           color: #333333;
           border: 1px solid #333333;
-          font-size: 10px;
+          font-size: 12px;
           width: 100%;
           height: 50px;
-          padding: 20px 80px;
+          padding: 20px 95px;
           line-height: 10px;
           letter-spacing: 1px;
           background-color: rgba(255, 255, 255, 0);
@@ -446,104 +322,3 @@
     }
   }
 }
-
-.swiper-wrapper {
-  /* wrapperのサイズを調整 */
-  width: 100%;
-  height: 300px !important;
-}
-
-.swiper-slide {
-  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
-  color: #ffffff;
-  width: 10%;
-  height: 150px;
-  text-align: center;
-  // line-height: 300px;
-  text-align: center;
-  margin-right: 15px;
-  background-color: #d6d5d5;
-}
-
-// .swiper-slide:nth-child(3n + 1) {
-//   background-color: #de4439;
-// }
-
-// .swiper-slide:nth-child(3n + 2) {
-//   background-color: #fcd500;
-// }
-
-// .swiper-slide:nth-child(3n + 3) {
-//   background-color: #53c638;
-// }
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  bottom: 0;
-  content: "";
-  height: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  width: 0;
-}
-.swiper-button-prev,
-.swiper-button-next {
-  height: 50px;
-  width: 50px;
-}
-/* 前へ次への矢印カスタマイズ */
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 50px;
-  margin: auto;
-  width: 50px;
-}
-/* 前への矢印カスタマイズ */
-.swiper-button-prev::after {
-  position: absolute;
-  top: -150px;
-  width: 40px;
-  height: 40px;
-
-  background-image: url("../../common/svg/arrow-left.svg");
-}
-/* 次への矢印カスタマイズ */
-.swiper-button-next::after {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -150px;
-  background-image: url("../../common/svg/arrow-right.svg");
-}
-/* 画像サイズ調整 */
-.swiper-slide img {
-  height: auto;
-  width: 100%;
-}
-
-// .swiper-button-next {
-//   border: 1px solid #333333;
-//   border-radius: 50px;
-//   width: 35px;
-//   height: 35px;
-//   margin-left: 20px;
-//   background-color: #fcd500;
-//   position: relative;
-//   &::before {
-//     content: "";
-//     border: 0;
-//     border-top: solid 1px #333333;
-//     border-right: solid 1px #333333;
-//     display: inline-block;
-//     width: 10px;
-//     height: 10px;
-//     position: absolute;
-//     top: 50%;
-//     right: 15px;
-//     transform: translateY(-50%) rotate(45deg);
-//   }
-// }

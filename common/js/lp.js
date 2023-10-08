@@ -39,20 +39,42 @@ if (window.outerWidth < 768) {
   detail_tl_element.remove();
 }
 
+// const swiper = new Swiper(".sample-slider", {
+//   // slidesPerView: 1,
+//   breakpoints: {
+//     // 768px以上の場合
+//     768: {
+//       slidesPerView: 2,
+//       // spaceBetween: 1,
+//     },
+//   },
+//   // ページネーションが必要なら追加
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+
+//   // ナビボタンが必要なら追加
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
+  // ページネーション
   breakpoints: {
-    // 768px以上の場合
+    350: {
+      slidesPerView: 3.2,
+      spaceBetween: 10,
+      centeredSlides: true,
+    },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 3.8,
+      spaceBetween: 10,
+      centeredSlides: true,
     },
   },
-  // ページネーションが必要なら追加
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // ナビボタンが必要なら追加
+  // 前後の矢印
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
