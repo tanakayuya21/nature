@@ -2,6 +2,7 @@
   .p-roorule {
     width: 100%;
     height: 1300px;
+    padding-top: 70px;
 
     &__container {
       display: grid;
@@ -33,16 +34,17 @@
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             text-orientation: upright;
-            font-size: 30px;
-            letter-spacing: 6.8px;
-            line-height: 30px;
+            font-size: 29px;
+            // letter-spacing: 6.8px;
+            padding-top: 13px;
+            // line-height: 30px;
             color: #333333;
             z-index: 1;
           }
           .title-child {
             font-size: 15px;
             color: #333333;
-            padding-top: 5px;
+            padding-top: 40px;
             padding-right: 5px;
           }
           .title-sub {
@@ -50,7 +52,7 @@
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: 50%;
+            top: 40%;
             color: $green;
             font-size: 60px;
             opacity: 0.2;
@@ -59,6 +61,7 @@
           .bamboo-img {
             position: absolute;
             bottom: -160px;
+            left: 100px;
             width: 100px;
           }
         }
@@ -111,17 +114,17 @@
         min-width: 200px;
 
         .arrow-box {
-          width: 90%;
+          width: 65%;
           position: relative;
           display: flex;
           .left-btn {
             z-index: 1;
             cursor: pointer;
-            width: 35px;
-            min-width: 33px;
-            height: 33px;
+            width: 30px;
+            min-width: 35px;
+            height: 30px;
             position: absolute;
-            top: 49%;
+            top: 46%;
             left: 15px;
           }
           .page-v {
@@ -137,36 +140,36 @@
             z-index: 1;
             cursor: pointer;
             position: absolute;
-            top: 49%;
+            top: 46%;
             right: 55px;
-            width: 33px;
-            height: 33px;
+            width: 30px;
+            min-width: 35px;
+            height: 30px;
           }
         }
         .description {
-          padding: 0px 40px 0 60px;
           align-items: center;
           font-size: 10px;
           color: #333333;
-          line-height: 22px;
           .description-top {
+            padding: 20px 0px 0px 0px;
             .page {
               color: #808080;
             }
             .title {
-              font-size: 15px;
+              font-size: 18px;
               padding: 10px 0;
             }
             .detail {
             }
           }
           .description-bottom {
-            padding-top: 70px;
+            padding: 80px 0px 0px 0px;
             justify-content: end;
 
             ul {
               list-style: disc;
-              font-size: 10px;
+              font-size: 11px;
             }
             .title {
               padding: 10px 0;
@@ -182,33 +185,35 @@
       &__grid3 {
         grid-row: 2/3;
         grid-column: 2/3;
-        margin-right: 60px;
-        width: 1000px;
+        margin-right: 90px;
+        width: 700px;
 
         display: flex;
         flex-direction: column;
         .detail-box {
-          margin-top: 30px;
+          margin-top: 35px;
+
           display: flex;
           .price-box {
             width: 50%;
-            margin-right: 100px;
+            padding-left: 30px;
             .rule-title {
               margin-left: -30px;
-              font-size: 20px;
+              font-size: 25px;
               color: #333333;
             }
             .fee-detail {
-              font-size: 15px;
-              padding: 20px 0;
+              font-size: 17px;
+              padding: 10px 10px 10px 0px;
             }
             .system-list {
               display: flex;
               font-size: 11px;
+
               .name-top {
                 width: 50%;
-                height: 40px;
-                line-height: 40px;
+                height: 35px;
+                line-height: 35px;
                 border-top: solid 1px #333333;
                 border-bottom: solid 1px #333333;
                 display: flex;
@@ -217,31 +222,31 @@
               }
               .value-top {
                 width: 50%;
-                height: 40px;
-                line-height: 40px;
+                height: 35px;
+                line-height: 35px;
                 border-top: solid 1px #333333;
                 border-bottom: solid 1px #333333;
                 padding-left: 10px;
               }
               .name-bottom {
                 width: 50%;
-                height: 40px;
-                line-height: 40px;
+                height: 35px;
+                line-height: 35px;
                 border-bottom: solid 1px #333333;
                 display: flex;
                 padding-left: 10px;
               }
               .value-bottom {
                 width: 50%;
-                height: 40px;
-                line-height: 40px;
+                height: 35px;
+                line-height: 35px;
                 border-bottom: solid 1px #333333;
 
                 padding-left: 10px;
               }
             }
             .cancel {
-              padding-top: 20px;
+              padding-top: 10px;
               .title {
                 display: inline-block;
                 position: relative;
@@ -273,6 +278,7 @@
               display: flex;
               justify-content: space-between;
               padding-top: 30px;
+
               padding-bottom: 60px;
               .content {
                 border: solid 1px #3d3d3d;
@@ -289,7 +295,8 @@
             display: flex;
             flex-direction: column;
             padding-top: 55px;
-            padding-left: 20px;
+            padding-right: 55px;
+            margin-left: 85px;
             ul {
               width: 100px;
               list-style: disc;
@@ -298,6 +305,7 @@
             span {
               font-size: 12px;
               padding-bottom: 5px;
+              padding-left: -30px;
             }
             .plan-top {
               padding-bottom: 20px;

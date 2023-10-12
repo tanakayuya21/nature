@@ -2,6 +2,7 @@
   .p-staff {
     width: 100%;
     height: 900px;
+    padding-top: 100px;
 
     &__container {
       display: grid;
@@ -26,15 +27,17 @@
           align-items: center;
           flex-direction: column;
           .icon-top {
-            padding-bottom: 30px;
-            width: 45px;
+            padding-top: 80px;
+            width: 55px;
+            padding-left: 30px;
           }
           .title {
+            padding-top: 30px;
+            padding-left: 30px;
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             text-orientation: upright;
             font-size: 30px;
-            letter-spacing: 6.8px;
             line-height: 30px;
             color: #333333;
             z-index: 1;
@@ -42,7 +45,7 @@
           .title-child {
             font-size: 15px;
             color: #333333;
-            padding-top: 5px;
+            padding-top: 30px;
             padding-right: 5px;
           }
           .title-sub {
@@ -50,31 +53,32 @@
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: 40%;
+            top: 50%;
             color: $green;
-            font-size: 60px;
+            font-size: 65px;
             opacity: 0.2;
             line-height: 50px;
             font-family: $side-fontFamily;
           }
           .icon-bottom {
-            width: 45px;
-            padding-top: 30px;
+            width: 55px;
+            padding-top: 80px;
             align-items: center;
+            padding-left: 30px;
           }
         }
         .icon-meeting {
           position: absolute;
           width: 180px;
           align-items: center;
-          bottom: -170px;
-          left: 50px;
+          bottom: -140px;
+          left: 70px;
         }
       }
       &__grid2 {
         grid-row: 1/3;
         grid-column: 2/3;
-        margin-right: 60px;
+        margin-right: 90px;
 
         .card-box {
           display: flex;
@@ -125,10 +129,12 @@
         .box {
           display: flex;
           flex-wrap: wrap;
-          width: 1000px;
+          width: 1100px;
           height: 600px;
+
           .card-user {
-            padding-top: 30px;
+            padding-top: 10px;
+            padding-right: 90px;
             width: 400px;
             height: 300px;
             flex-shrink: 0;
