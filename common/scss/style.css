@@ -226,6 +226,7 @@ body {
 @media screen and (max-width: 768px) {
   .hamburger-menu {
     left: 0px;
+    top: 35%;
   }
 }
 
@@ -364,6 +365,11 @@ body {
   margin-top: -4px;
   transform: rotate(-45deg);
   z-index: 9999;
+}
+@media screen and (max-width: 768px) {
+  .side-menu .arrow:after {
+    top: 39%;
+  }
 }
 
 /* メニューを開いた時 */
@@ -757,6 +763,7 @@ body {
     color: #333333;
     z-index: 1;
     font-family: "kaisou", serif;
+    padding-left: 20px;
   }
   .p-about__container__grid1 .title-box .title-child {
     font-size: 15px;
@@ -809,7 +816,7 @@ body {
     padding-bottom: 5px;
   }
   .p-about__container__grid1 .title-bottom .lang .lang-middle {
-    font-size: 22px;
+    font-size: 19px;
     text-align: left;
     padding-right: 80px;
     padding-bottom: 5px;
@@ -2290,13 +2297,16 @@ body {
     width: 40px;
   }
   .p-gallery__container__grid1 .title-box {
-    position: relative;
-    padding-top: 30px;
     padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .p-gallery__container__grid1 .title-box .cloud-img {
+    position: absolute;
+    top: -20%;
+    left: 50px;
   }
   .p-gallery__container__grid1 .title-box .title {
     writing-mode: vertical-rl;
@@ -2305,17 +2315,17 @@ body {
     line-height: 30px;
     color: #333333;
     z-index: 1;
+    position: relative;
+    padding-top: 28px;
+    padding-right: 18px;
   }
   .p-gallery__container__grid1 .title-box .title-child {
     font-size: 20px;
     color: #333333;
   }
   .p-gallery__container__grid1 .title-box .title-sub {
-    text-align: start;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 70px;
     color: #84bba0;
     font-size: 60px;
@@ -2329,10 +2339,10 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 40px;
-    left: 70px;
+    left: 50px;
   }
   .p-gallery__container__grid1 .title-box .instagram-btn {
-    margin-top: 55px;
+    margin-top: 57px;
     margin-right: 20px;
     color: #333333;
     border: 1px solid #333333;
@@ -2409,6 +2419,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .p-gallery__container__grid1 .title-box .cloud-img {
+    position: absolute;
+    top: -20%;
+    left: -40px;
   }
   .p-gallery__container__grid1 .title-box .title {
     writing-mode: vertical-rl;
@@ -2591,11 +2606,12 @@ body {
     transform: translateY(-50%) rotate(45deg);
   }
   .p-natasyou__container__grid1 .title-bottom .skip-btn {
+    margin-left: 10px;
     margin-top: 20px;
     color: #333333;
     border: 1px solid #333333;
     font-size: 10px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     background-color: #ffffff;
     line-height: 10px;
     letter-spacing: 1px;

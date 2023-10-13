@@ -36,11 +36,11 @@
             writing-mode: vertical-rl;
             text-orientation: upright;
             font-size: 27px;
-            // letter-spacing: 6.8px;
             line-height: 35px;
             color: #333333;
             z-index: 1;
             font-family: $kaiso-fontFamily;
+            padding-left: 20px;
           }
           .title-child {
             font-size: 15px;
@@ -93,7 +93,7 @@
               padding-bottom: 5px;
             }
             .lang-middle {
-              font-size: 22px;
+              font-size: 19px;
               text-align: left;
               padding-right: 80px;
               padding-bottom: 5px;
@@ -137,7 +137,6 @@
           line-height: 22px;
         }
         .about-img {
-          // padding: 30px;
           padding-right: 20px;
           padding-bottom: 20px;
           width: 350px;
@@ -150,7 +149,6 @@
         grid-column: 2/3;
         display: flex;
         align-items: start;
-        // padding: 10px 300px 30px 50px;
         margin-right: 100px;
         padding-top: 0px;
 

@@ -39,27 +39,6 @@ if (window.outerWidth < 768) {
   detail_tl_element.remove();
 }
 
-// const swiper = new Swiper(".sample-slider", {
-//   // slidesPerView: 1,
-//   breakpoints: {
-//     // 768px以上の場合
-//     768: {
-//       slidesPerView: 2,
-//       // spaceBetween: 1,
-//     },
-//   },
-//   // ページネーションが必要なら追加
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-
-//   // ナビボタンが必要なら追加
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
 const swiper = new Swiper(".swiper", {
   // ページネーション
   breakpoints: {

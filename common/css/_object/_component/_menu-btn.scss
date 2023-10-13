@@ -12,6 +12,7 @@
   left: 20px;
   @include sp {
     left: 0px;
+    top: 35%;
   }
 }
 .hamburger-menu__bar {
@@ -102,6 +103,7 @@
   height: 100%;
   font-size: 20px;
   color: #333333;
+
   nav {
     padding: 60px;
     text-align: left;
@@ -122,6 +124,7 @@
   }
   .arrow {
     cursor: pointer;
+
     &:after {
       content: "";
       width: 10px;
@@ -135,6 +138,9 @@
       margin-top: -4px;
       transform: rotate(-45deg);
       z-index: 9999;
+      @include sp {
+        top: 39%;
+      }
     }
   }
 }
